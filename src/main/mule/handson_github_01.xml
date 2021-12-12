@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="handson_github_01Flow" doc:id="f4e1305e-a7ee-4d17-b919-c49e8b74d666" >
 		<http:listener doc:name="Listener" doc:id="017180f1-071a-4943-a010-2bfca604091c" config-ref="HTTP_Listener_config" path="/github_01"/>
 		<set-payload value='#["Github_01"]' doc:name="Set Payload" doc:id="39d373ed-a060-4112-8fd5-008a15c07fd7" />
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="2b38095d-73b3-43b5-a288-f13ce60279c5" />
 	</flow>
 </mule>
